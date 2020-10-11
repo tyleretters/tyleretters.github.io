@@ -8,8 +8,8 @@ layout: default
 {{ content }}
 
 <ul id="collection">
-  {% assign examples_by_order = site.examples | sort: "order" %}
-  {% for item in site.examples %}
+  {% assign examples_by_order = site.repositories | sort: "order" %}
+  {% for item in site.repositories %}
     <li>
       <h2>{{ item.name }}</h2>
       <ul>

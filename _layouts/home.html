@@ -1,4 +1,44 @@
 ---
 layout: default
 ---
-{{ content }}
+{% assign norns_repos = site.repositories | where: "attributes", "norns" %}
+{% assign tools_repos = site.repositories | where: "attributes", "tools" %}
+{% assign audio_repos = site.repositories | where: "attributes", "audio" %}
+
+<div class="row">
+  <div class="col-md-4 col-sm-12">
+    <h3>norns</h3>
+    <hr>
+    <ul>
+      {% for norns in norns_repos %}
+      <li>
+        <a href="{{ norns.link }}">{{ norns.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="col-md-4 col-sm-12">
+    <h3>tools</h3>
+    <hr>
+    <ul>
+      {% for tools in tools_repos %}
+      <li>
+        <a href="{{ tools.link }}">{{ tools.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="col-md-4 col-sm-12">
+    <h3>audio</h3>
+    <hr>
+    <ul>
+      {% for audio in audio_repos %}
+      <li>
+        <a href="{{ audio.link }}">{{ audio.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
