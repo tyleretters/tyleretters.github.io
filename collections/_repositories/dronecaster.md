@@ -1,5 +1,5 @@
 ---
 name: dronecaster
 attributes: ['norns']
-link: https://github.com/tyleretters/dronecaster
+link: https://github.com/northern-information/dronecaster
 ---
