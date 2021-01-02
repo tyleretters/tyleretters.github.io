@@ -1,5 +1,5 @@
 ---
 name: crypts
 attributes: ['audio']
-link: https://github.com/tyleretters/crypts
+link: https://github.com/northern-information/crypts
 ---
